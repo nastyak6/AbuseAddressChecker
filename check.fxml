@@ -11,20 +11,20 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="737.0" prefWidth="1049.0" stylesheets="@עיצוב%20תבניות%20תכנה/project/text.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="811.0" prefWidth="1031.0" stylesheets="@עיצוב%20תבניות%20תכנה/project/text.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <Label alignment="CENTER" layoutX="372.0" layoutY="48.0" prefHeight="57.0" prefWidth="289.0" style="-fx-font-size: 25; -fx-font-weight: bold;" text="Abuse Address Checker" textAlignment="CENTER" />
+      <Label alignment="CENTER" layoutX="372.0" layoutY="48.0" prefHeight="57.0" prefWidth="358.0" style="-fx-font-size: 25; -fx-font-weight: bold; -fx-font-family: Lucida Sans Unicode;" text="Abuse Address Checker" textAlignment="CENTER" />
       <Label layoutX="49.0" layoutY="144.0" style="-fx-font-size: 20;" text="Address To Check" />
       <TextField fx:id="Address_textField" layoutX="49.0" layoutY="192.0" prefHeight="39.0" prefWidth="264.0" />
-      <Button fx:id="Add_button" layoutX="341.0" layoutY="192.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="104.0" text="Add To List" />
+      <Button fx:id="Add_button" layoutX="341.0" layoutY="192.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="113.0" text="Add To List" />
       <ListView fx:id="Address_ListvVew" layoutX="49.0" layoutY="337.0" prefHeight="212.0" prefWidth="396.0" />
       <Label layoutX="65.0" layoutY="290.0" style="-fx-font-size: 20;" text="Address" />
-      <Button fx:id="clear_button" layoutX="255.0" layoutY="285.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="104.0" text="Clear Table" />
-      <Button fx:id="scan_button" layoutX="811.0" layoutY="285.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="104.0" text="Scan" />
-      <Label layoutX="236.0" layoutY="575.0" text="Log" />
-      <TextArea fx:id="log_textArea" layoutX="49.0" layoutY="611.0" prefHeight="86.0" prefWidth="396.0" />
+      <Button fx:id="clear_button" layoutX="326.0" layoutY="559.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="113.0" text="Clear Table" />
+      <Button fx:id="scan_button" layoutX="699.0" layoutY="723.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="113.0" text="Scan" />
+      <Label layoutX="236.0" layoutY="642.0" text="Log" />
+      <TextArea fx:id="log_textArea" editable="false" layoutX="49.0" layoutY="678.0" prefHeight="86.0" prefWidth="396.0" />
       <Label layoutX="382.0" layoutY="310.0" text="Upload" />
-      <TableView fx:id="report_tableView" layoutX="543.0" layoutY="337.0" prefHeight="360.0" prefWidth="459.0">
+      <TableView fx:id="report_tableView" layoutX="526.0" layoutY="339.0" prefHeight="360.0" prefWidth="459.0">
         <columns>
           <TableColumn prefWidth="75.0" text="Address" />
           <TableColumn prefWidth="104.0" text="# Of Abuses" />
@@ -34,22 +34,24 @@
             <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
          </columnResizePolicy>
       </TableView>
-      <Label layoutX="543.0" layoutY="291.0" style="-fx-font-size: 20;" text="Report Result" />
+      <Label layoutX="526.0" layoutY="292.0" style="-fx-font-size: 20;" text="Report Result" />
       <ImageView fx:id="upload_button" fitHeight="39.0" fitWidth="56.0" layoutX="384.0" layoutY="272.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@עיצוב%20תבניות%20תכנה/project/3818198.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="save_button" fitHeight="39.0" fitWidth="56.0" layoutX="941.0" layoutY="272.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="save_button" fitHeight="39.0" fitWidth="56.0" layoutX="935.0" layoutY="279.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@עיצוב%20תבניות%20תכנה/project/139-1396273_down-down-arrow-download-guardar-save-icon-save-red-icon-png-removebg-preview.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="192.0" fitWidth="227.0" layoutX="733.0" layoutY="63.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="192.0" fitWidth="227.0" layoutX="743.0" layoutY="63.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@עיצוב%20תבניות%20תכנה/project/istockphoto-1299615596-612x612-removebg-preview.png" />
          </image>
       </ImageView>
-      <Label layoutX="946.0" layoutY="309.0" text="Save" />
+      <Label layoutX="940.0" layoutY="316.0" text="Save" />
+      <Button fx:id="clear_button1" layoutX="191.0" layoutY="559.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="113.0" text="Delete Row" />
+      <Button fx:id="clear_button2" layoutX="56.0" layoutY="559.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="113.0" text="Edit Row" />
    </children>
 </AnchorPane>
