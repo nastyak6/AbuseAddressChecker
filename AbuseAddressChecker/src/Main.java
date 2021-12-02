@@ -22,7 +22,7 @@ public class Main {
 		Report r = new Report(xr);
 		r.addReportItem(new ReportItem("someAddress", "3", "someLink"));
 		r.addReportItem(new ReportItem("someAddress2", "32", "someLink2"));
-		r.SaveReport(r.getReportAsArrayList());
+		r.SaveReport();
 		
 		logger.log("THIS IS A TEST LOG1");
 		logger.log("THIS IS A TEST LOG2");

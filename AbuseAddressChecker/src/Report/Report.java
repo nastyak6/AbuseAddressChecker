@@ -19,7 +19,7 @@ public class Report {
 	}
 
 
-	public void SaveReport(ArrayList<ReportItem> report) {
+	public void SaveReport() {
 		reportActions.SaveReport(report);
 	}
 
