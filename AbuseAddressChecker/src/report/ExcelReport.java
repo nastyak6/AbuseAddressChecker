@@ -1,4 +1,4 @@
-package Report;
+package report;
 
 import java.io.FileOutputStream;
 import java.time.LocalDateTime;

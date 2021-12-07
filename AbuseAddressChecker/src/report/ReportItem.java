@@ -1,4 +1,4 @@
-package Report;
+package report;
 
 public class ReportItem {
 	private String address;

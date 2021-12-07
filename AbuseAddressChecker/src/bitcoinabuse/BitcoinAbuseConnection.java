@@ -25,18 +25,22 @@ public class BitcoinAbuseConnection implements IBitcoinAbuse {
 			return null;
 		}
 	}
-	
+
 	public String getNumberOfAbuses(String address) {
 		String result = CheckAddress(address);
-		String arr[] = result.split(",");
-		String res = arr[1].substring(8);
-		return res;
+		if (result != null) {
+			String arr[] = result.split(",");
+			String res = arr[1].substring(8);
+			return res;
+		}
+		return null;
+
 	}
 
 	public String getLink(String address) {
 		return BASE_WALLET_URL + address;
 	}
-	
+
 	private String sendGET(String getUrl) throws IOException {
 		URL url = new URL(getUrl);
 		HttpURLConnection con = (HttpURLConnection) url.openConnection();
