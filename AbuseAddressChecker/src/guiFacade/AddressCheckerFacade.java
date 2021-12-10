@@ -18,13 +18,13 @@ import report.Report;
 import report.ReportItem;
 import report.ReportItemTV;
 
-public class AddressCheckFacade implements IAddressCheckerFacade {
+public class AddressCheckerFacade implements IAddressCheckerFacade {
 
-	FileImport importFile;
-	Report r;
-	LoggerToFile logger;
+	private FileImport importFile;
+	private Report r;
+	private LoggerToFile logger;
 
-	public AddressCheckFacade() {
+	public AddressCheckerFacade() {
 		super();
 		logger = LoggerToFile.getLogger();
 		ExcelReport xr = new ExcelReport();

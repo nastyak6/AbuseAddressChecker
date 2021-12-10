@@ -7,8 +7,10 @@ import bitcoinabuse.BitcoinAbuseConnection;
 public class Report {
 	protected ArrayList<ReportItem> report = new ArrayList<ReportItem>();
 	private IReport reportActions;
+	private BitcoinAbuseConnection BAC;
 	
 	public Report(IReport reportActions) {
+		BAC = new BitcoinAbuseConnection();
 		this.reportActions = reportActions;
 	}
 	
@@ -28,7 +30,6 @@ public class Report {
 	}
 	
 	public void Scan(HashSet<String> addresses) {
-		BitcoinAbuseConnection BAC = new BitcoinAbuseConnection();
 		for (String address : addresses) {
 			String numOfAbuses = BAC.getNumberOfAbuses(address);
 			String link = BAC.getLink(address);

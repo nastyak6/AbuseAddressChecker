@@ -8,7 +8,7 @@ import report.ReportItemTV;
 
 public interface IAddressCheckerFacade {
 
-	public void ImportAdressesFile(ListView<String>Address_ListvVew,TextField Address_textField);
+	public void ImportAdressesFile(ListView<String>Address_ListvVew, TextField Address_textField);
 	
 	public void DeleteRow(ListView<String>Address_ListvVew);
 	

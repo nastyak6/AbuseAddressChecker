@@ -16,7 +16,7 @@ public class GuiMain extends Application{
 			loader.load();
 			Parent p = loader.getRoot();
 			primaryStage.setTitle("Abuse Address Checker");
-			//primaryStage.getIcons().add(new Image(GoNatureFinals.APP_ICON));
+			primaryStage.getIcons().add(new Image("/gui/resources/istockphoto-1299615596-612x612-removebg-preview.png"));
 			primaryStage.setScene(new Scene(p));
 			primaryStage.setResizable(false);
 			primaryStage.show();

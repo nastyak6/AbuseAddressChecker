@@ -2,7 +2,8 @@ package gui;
 
 import java.net.URL;
 import java.util.ResourceBundle;
-import guiFacade.AddressCheckFacade;
+import guiFacade.AddressCheckerFacade;
+import guiFacade.IAddressCheckerFacade;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -67,13 +68,13 @@ public class BitcoinAbuseController implements Initializable{
     @FXML
     private Button clear_button2;
     
-    AddressCheckFacade addressCheckFacade;
+    IAddressCheckerFacade addressCheckFacade;
 
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
 		// TODO Auto-generated method stub
 		init();
-		addressCheckFacade = new AddressCheckFacade();
+		addressCheckFacade = new AddressCheckerFacade();
 		Address_ListvVew.setCellFactory(TextFieldListCell.forListView());
 		
 		Address_ListvVew.setOnEditCommit(new EventHandler<ListView.EditEvent<String>>() {
